@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@mui/base": "^5.0.0-beta.70",
+    "@mui/material": "^7.3.9",
     "@mui/system": "^7.3.9",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
