@@ -5,7 +5,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Section from "./components/Section/Section";
-import axios from "axios";
+
+import SongsSection from "./components/SongsSection/SongsSection";
 
 function App() {
   const [searchData, setSearchData] = useState([]);
@@ -30,6 +31,7 @@ function App() {
       <Hero />
       <Section title="Top Albums" albums={topAlbums} />
       <Section title="New Albums" albums={newAlbums} />
+      <SongsSection />
     </div>
   );
 }
