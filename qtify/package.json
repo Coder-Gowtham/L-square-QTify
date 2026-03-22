@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/styled": "^11.14.1",
     "@mui/base": "^5.0.0-beta.70",
     "@mui/material": "^7.3.9",
     "@mui/system": "^7.3.9",
