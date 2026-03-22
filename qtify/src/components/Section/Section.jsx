@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Section.module.css";
+
 
 import Card from "../Card/Card";
 import Button from "../Button/Button";
-import axios from "axios";
 import Carousel from "../Carousel/Carousel";
 
-function Section() {
-  const [albums, setAlbums] = useState([]);
-  const [collapsed, setCollapsed] = useState(false);
 
-  useEffect(() => {
-    axios.get("https://qtify-backend.labs.crio.do/albums/top")
-      .then((res) => setAlbums(res.data))
-      .catch((err) => console.error(err));
-  }, []);
+function Section({ title, albums }) {
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <section className={styles.section}>
       <div className={styles.sectionHeader}>
-        <h2 className={styles.title}>Top Albums</h2>
+        <h2 className={styles.title}>{title}</h2>
         <Button onClick={() => setCollapsed((c) => !c)}>
           {collapsed ? "Show All" : "Collapse"}
         </Button>
