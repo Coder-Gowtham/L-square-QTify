@@ -4,6 +4,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+
+import SongsSection from "./components/SongsSection/SongsSection";
 import Section from "./components/Section/Section";
 
 
