@@ -15,7 +15,7 @@ function Section({ title, albums }) {
       <div className={styles.sectionHeader}>
         <h2 className={styles.title}>{title}</h2>
         <Button onClick={() => setCollapsed((c) => !c)}>
-          {collapsed ? "Show All" : "Collapse"}
+          {collapsed ? "Collapse" : "Show All"}
         </Button>
       </div>
       {collapsed ? (
